@@ -6,7 +6,7 @@ const Delete = () => {
 
     const DeleteBtn = async () => {
         console.log('hello');
-        await axios.delete(`/${id}`);
+        await axios.delete(`http://127.0.0.1:5000/${id}`);
         setId('');
     };
     return (
