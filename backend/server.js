@@ -27,6 +27,11 @@ app.use(function (req, res, next) {
 
 app.use('/', crudRoutes);
 
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/build'));
+});
+
 mongoose.connect(
     'mongodb+srv://crud-app:2lUy9nVCBHQyxtB6@cluster0.hqba7.mongodb.net/crud-app?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true },
