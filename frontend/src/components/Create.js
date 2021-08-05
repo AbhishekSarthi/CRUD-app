@@ -12,7 +12,7 @@ const Create = () => {
             author,
         };
         console.log(data);
-        await axios.post('http://localhost:5000/', data);
+        await axios.post('http://localhost:5000/api/', data);
         setTitle('');
         setBody('');
         setAuthor('');

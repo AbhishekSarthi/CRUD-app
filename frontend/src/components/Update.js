@@ -13,7 +13,7 @@ const Update = () => {
             author,
         };
         console.log(data);
-        await axios.patch(`http://localhost:5000/${id}`, data);
+        await axios.patch(`http://localhost:5000/api/${id}`, data);
         setId('');
         setTitle('');
         setBody('');
