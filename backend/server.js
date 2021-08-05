@@ -2,10 +2,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const crudRoutes = require('./routes/crud-routes');
-// const cors = require('cors');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000;
 app.use(express.json());
+app.use(cors());
 
 // app.use(
 //     cors({
