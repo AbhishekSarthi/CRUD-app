@@ -5,7 +5,7 @@ const Read = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axios.get('http://localhost:5000/api');
+            const { data } = await axios.get('/api');
             setData(data);
         };
         getData();
