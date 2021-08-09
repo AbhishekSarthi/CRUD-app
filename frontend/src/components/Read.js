@@ -13,7 +13,7 @@ const Read = () => {
 
     return (
         <div>
-            <h2>Read posts</h2>
+            <h3>Read posts</h3>
             {data.map((singleData) => {
                 return (
                     <div className="box" key={singleData._id}>

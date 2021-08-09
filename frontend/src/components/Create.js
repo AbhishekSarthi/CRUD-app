@@ -20,7 +20,7 @@ const Create = () => {
 
     return (
         <>
-            <h2>Create a post</h2>
+            <h3>Create a post</h3>
             <h3>Title : </h3>
             <input onChange={(e) => setTitle(e.target.value)} value={title} />
 
