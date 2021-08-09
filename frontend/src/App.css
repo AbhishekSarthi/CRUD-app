@@ -56,5 +56,6 @@ button {
 }
 
 .box {
-    background-color: #b1a9f7;
+    background-color: lightgrey;
+    color: black;
 }
